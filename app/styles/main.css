@@ -1606,7 +1606,7 @@ output {
   padding-top: 7px;
   font-size: 14px;
   line-height: 1.42857143;
-  color: #555555;
+  color: #cccccc;
   vertical-align: middle;
 }
 .form-control {
@@ -1616,7 +1616,7 @@ output {
   padding: 6px 12px;
   font-size: 14px;
   line-height: 1.42857143;
-  color: #555555;
+  color: #cccccc;
   vertical-align: middle;
   background-color: #ffffff;
   background-image: none;
@@ -3295,7 +3295,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
   font-size: 14px;
   font-weight: normal;
   line-height: 1;
-  color: #555555;
+  color: #cccccc;
   text-align: center;
   background-color: #eeeeee;
   border: 1px solid #cccccc;
@@ -3436,7 +3436,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:hover,
 .nav-tabs > li.active > a:focus {
-  color: #555555;
+  color: #cccccc;
   background-color: #ffffff;
   border: 1px solid #dddddd;
   border-bottom-color: transparent;
@@ -7302,15 +7302,16 @@ td.visible-print {
 .navbar-custom svg {
   fill: white;
 }
-.navbar-custom a {
+.navbar-custom li > a {
   color: white;
   font-size: 1.2em;
+  text-align: center;
 }
-.navbar-custom a:hover,
-.navbar-custom a:focus {
+.navbar-custom li > a:hover,
+.navbar-custom li > a:focus {
   background-color: transparent !important;
 }
-.navbar-custom a:before {
+.navbar-custom li > a:before {
   content: "";
   position: absolute;
   width: 70%;
@@ -7324,7 +7325,13 @@ td.visible-print {
   -webkit-transition: all 0.3s ease-in-out 0s;
   transition: all 0.3s ease-in-out 0s;
 }
-.navbar-custom a:hover:before {
+@media (max-width: 768px) {
+  .navbar-custom li > a:before {
+    left: 45%;
+    width: 10%;
+  }
+}
+.navbar-custom li > a:hover:before {
   visibility: visible;
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
@@ -7332,6 +7339,61 @@ td.visible-print {
 .navbar-custom ul {
   margin-top: 2%;
   height: 100%;
+}
+.navbar-custom button {
+  border: 1px solid #cccccc;
+  margin-top: 35px;
+  width: 50px;
+  height: 35px;
+}
+.navbar-custom button:hover {
+  border: 1px solid white;
+}
+.navbar-custom button:hover span.icon-bar {
+  background-color: white;
+}
+.navbar-custom button:hover span.icon-bar::before {
+  transform: translateY(-8px);
+  background-color: white;
+}
+.navbar-custom button:hover span.icon-bar::after {
+  transform: translateY(8px);
+  background-color: white;
+}
+.navbar-custom button.is-opened span.icon-bar {
+  background: transparent;
+}
+.navbar-custom button.is-opened span.icon-bar::before {
+  transform: translateY(0) rotate(45deg);
+}
+.navbar-custom button.is-opened span.icon-bar::after {
+  transform: translateY(0) rotate(-45deg);
+}
+.navbar-custom button span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  display: block;
+  width: 50px;
+  height: 2px;
+  background-color: #cccccc;
+}
+.navbar-custom button span::before,
+.navbar-custom button span::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(-6px);
+  display: block;
+  width: 22px;
+  height: 2px;
+  background-color: #cccccc;
+  transition: transform 0.5s;
+}
+.navbar-custom button span::after {
+  transform: translateY(6px);
 }
 .navbar-brand {
   width: 140px;
