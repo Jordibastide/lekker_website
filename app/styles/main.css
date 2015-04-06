@@ -7676,6 +7676,23 @@ body {
 #menu .lelekker {
   background: url('../images/menu/lejordilogo.png');
 }
+#map html,
+#map body,
+#map #map-canvas {
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+#map #panel {
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  margin-left: 0px;
+  z-index: 5;
+  background-color: #fff;
+  padding: 5px;
+  border: 1px solid #999;
+}
 .jumbotron {
   margin: 50px auto 0 auto;
 }
