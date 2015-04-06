@@ -20,4 +20,16 @@ $(document).ready(function(){
 		window.open(url, 'twitter', opts);
 		return false;
 	});
+
+	$('.nav-link').click(function() {
+		var linked = $(this).attr('rel');
+	    $('html, body').animate({
+	        scrollTop: $('#'+linked).offset().top - 104
+	    }, 800);
+
+	    $('.navbar-toggle').removeClass('is-opened');
+	    $('#navbar-ex-collapse').removeClass('in').addClass('collapse');
+
+	    return false;
+	});
 });

@@ -1,16 +1,60 @@
 @import "variables.less";
 
-html,
-body {
-  height: 100%;
-}
-
 #site-wrapper {
   background: url("../images/lekker-cover.jpg") center center;
   background-size: cover;
   background-attachment: fixed;
+  display: table;
+  color: white;
+
   width: 100%;
   height: 100%; /* For at least Firefox */
   min-height: 100%;
   box-shadow: inset 0 0 70px @primary;
+
+  .arrow-domn {
+  	position: absolute;
+  	bottom: 0;
+  	left: 0;
+  	right: 0;
+  	margin: auto;
+
+  	i {
+  		color: white;
+  		font-size: 5em;
+  		margin-bottom: 10px;
+  		transition: 0.5s;
+
+  		&:hover {
+  			text-shadow: 0px 0px 2px white;
+  			transform: scale(1.1, 1.1);
+  			cursor: pointer;
+  		}
+  	}
+  }
+
+  .cover-content {
+  	display: table-cell;
+  	padding: 300px 20px 0;
+  	vertical-align: middle;
+  	text-align: center;
+  	font-family: canter-bold;
+
+  	p {
+  		font-family: canter-bold;
+  		font-size: 3em;
+
+  		&.upper {
+  			text-transform: uppercase;
+  		}
+  	}
+
+  	.metro {
+  		background: url('../images/metro.svg') no-repeat center bottom;
+  		content: '';
+  		display: inline-block;
+  		height: 30px;
+  		width: 150px;
+  	}
+  }
 }

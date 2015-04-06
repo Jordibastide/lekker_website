@@ -5,6 +5,7 @@
 @fa-font-path: "../fonts/font-awesome/";
 
 @fa-font-path: "../fonts/canter";
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
 
 @import "navbar.less";
 @import "loader.less";
@@ -12,10 +13,19 @@
 @import "next-bunny.less";
 @import "twitter-timeline.less";
 @import "menu.less";
+@import "description.less";
 
+html, body {
+	font-family: 'Open Sans', sans-serif;
+	height: 100%;
+}
 
 .jumbotron {
   margin: 50px auto 0 auto;
+}
+
+.row {
+	margin-right: 0px!important;
 }
 
 section {

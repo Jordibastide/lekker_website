@@ -41,7 +41,7 @@
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar middle-bar"></span>
           </button>
-          <a href="#" class="navbar-brand">
+          <a rel="site-wrapper" href="#" class="navbar-brand nav-link">
             <svg x="0px" y="0px" viewBox="0 0 255 160" preserveAspectRatio="xMidYMid meet">
               <path d="M47.8,13.6v72.6h22.2v4H47.8v26.5h28v4.1h-32V9.6h32v4H47.8z M97.6,80.8l28,40h-5l-25-35.7L91,95.4v25.4h-4V9.6h4v77.2l30.4-77.2h4.1L97.6,80.8z M117.2,36.7h4l29.5,77.5V36.7h3.9v111.6h-3.9v-25.5l-4.5-10.4l-24.2,35.9H117l27.1-40.2L117.2,36.7z M163.6,40.6v-4h35.8V148h-35.8v-4.1H195v-26.6h-24.8v-4H195V40.6H163.6z M47.3,129v4.1H15.7V21.6h4.7V129H47.3zM236.6,133.1h-4.7v-18.5c0-7-4.9-11.6-13-11.6h-19.4v30.1h-4.7V21.6h19.7c9.9,0,21.4,5.7,21.4,21.5v38.4c0,7-3.5,13.9-11.3,18.3c7.6,1.7,12,7.8,12,14.8V133.1z M199.5,98.9h15c7.2,0,16.9-6.2,16.9-17.4V43.1c0-10.7-6.7-17.4-16.9-17.4h-15V98.9z M108.7,143.6H27.8v4.3h80.9V143.6z"/>
             </svg>
@@ -50,22 +50,36 @@
         <div class="collapse navbar-collapse" id="navbar-ex-collapse">
           <ul class="nav navbar-nav navbar-right">
             <li>
-              <a href="#">NextBunny</a>
+              <a class="nav-link" rel="next-bunny" href="#">NextBunny</a>
             </li>
             <li>
-              <a href="#">Bunny's</a>
+              <a class="nav-link" rel="bunny-description" href="#">Bunny's</a>
             </li>
             <li>
-              <a href="#">Adresses</a>
+              <a class="nav-link" href="#">Adresses</a>
             </li>
             <li>
-              <a href="#">Presse-agrume</a>
+              <a class="nav-link" href="#">Presse-agrume</a>
             </li>
           </ul>
         </div>
       </div>
     </div>
   </nav>
+  <div class="cover-content">
+      <p>
+        Lundi à Dimanche 11h - 23h<br />
+        8 Rue de la Bastille - 4ème<br />
+        <span class="metro"></span>Bastille
+      </p>
+  </div>
+  <div class="arrow-domn row">
+    <div class="col-sm-12 text-center">
+      <a class="nav-link" rel="next-bunny" href="#">
+        <i class="fa fa-angle-double-down"></i>
+      </a>
+    </div>
+  </div>
 </section>
 <section id="next-bunny">
   <div class="container">
@@ -174,14 +188,42 @@
         href="https://twitter.com/hashtag/nextbunny"
         data-widget-id="584843742244397057">
         Tweets sur #nextbunny
-      </a>
-      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
-      </script>     
+      </a>    
     </div>
   </div>
 </div>
 </section>
-
+<section id="bunny-description">
+  <div class="container-fluid title">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <h1>
+            Vous avez dit Bunny ?
+            <span class="subtitle"> > Quelques explications sur ce plat traditionnel d'Afrique du sud</span>
+          </h1>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid content">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 col-sm-push-4" >
+          <h2>Un peu d'histoire</h2>
+          <p>
+            Le <strong>Bunny</strong> ou Bunny chow a été créé à Durban par la communauté indienne largement implantée dans les années 1940. <br />
+            Cependant, l'histoire raconte que des travailleurs indiens, amenés pour travailler dans les plantations de canne à sucre, ont trouvé qu'une miche de pain était un contenant bien utile pour transporter leur curry végétarien. <br />
+            Serait alors né le bunny qui se décline aujoud'hui avec toute sorte de garnitures de différentes cultures.
+          </p>
+        </div>
+        <div class="col-sm-4 col-sm-pull-8">
+          <img class="bunny-img img-reponsive" src="images/bunny.png"/>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 <section>
   <div class="section" id="menu_section">
     <div class="container" id="menu_container">
@@ -252,6 +294,9 @@
       r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
       ga('create','UA-XXXXX-X');ga('send','pageview');
       </script>
+
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+      </script> 
 
 
       <!-- build:js scripts/main.js -->

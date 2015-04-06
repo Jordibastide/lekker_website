@@ -1,0 +1,54 @@
+@import "variables.less";
+
+#bunny-description {
+	background: url('../images/background-letterpressed.jpg') center top;
+	background-attachment: fixed;
+	background-size: cover;
+	padding-bottom: 0;
+
+
+	.title {
+		background-color: white;
+		margin-top: -2%;
+		padding-top: 2%;
+	}
+
+	.content {
+		background: fade(white, 60%);
+		overflow: hidden;
+	}
+
+	.bunny-img {
+		position: relative;
+		width: 80%;
+		top: 70px;
+		left: 0;
+		margin: auto; 
+		
+		@media (max-width: @screen-md-max){
+			top: 70px;
+		}
+	}
+
+	h2 {
+		font-family: canter-bold;
+		font-size: 3em;
+		margin-top: 10px;
+
+		&:after {
+			content: '';
+			display: block;
+			height: 1px;
+			width: 100%;
+			background-color: @primary;
+			margin-bottom: 20px;
+		}
+	}
+
+	p {
+		font-style: italic;
+		vertical-align: center;
+		font-size: 1.1em;
+		text-align: justify;
+	}
+}
