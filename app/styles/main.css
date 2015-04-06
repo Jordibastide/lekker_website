@@ -8023,6 +8023,21 @@ body {
 #twitter-timeline .no-tweets-pane {
   color: white!important;
 }
+#menu_section {
+  background-color: #485e69;
+  padding-top: 50px;
+}
+.menu_item_bloc {
+  background-color: #ccc2b6;
+  padding: 8px;
+}
+#lejordilogo {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background: url('../images/menu/lejordilogo.png');
+}
 .jumbotron {
   margin: 50px auto 0 auto;
 }

@@ -1,4 +1,6 @@
 # Numerous always-ignore extensions
+*.css
+*.map
 *.diff
 *.err
 *.orig
@@ -9,6 +11,7 @@
 *.zip
 *.vi
 *~
+
 
 # OS folders
 .DS_Store
