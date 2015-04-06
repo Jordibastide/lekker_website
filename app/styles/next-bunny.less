@@ -21,6 +21,15 @@
 		padding: 10px;
 	}
 
+	.menu_item{
+		@media (max-width: @screen-md-max){
+			margin-top: 50px;
+			background-color: blue;
+
+		}
+	}
+
+
 	.bunny {
 		background-color: fade(@primary, 20%);
 		border: 5px solid white;
@@ -36,6 +45,7 @@
 			height: 150%;
 
 			@media (max-width: @screen-xs-max){
+				padding-bottom: 10px;
 				border-bottom: 5px solid white;
 			}
 			

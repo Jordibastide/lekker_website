@@ -24,7 +24,7 @@ $(document).ready(function(){
 	$('.nav-link').click(function() {
 		var linked = $(this).attr('rel');
 	    $('html, body').animate({
-	        scrollTop: $('#'+linked).offset().top - 104
+	        scrollTop: $('#'+linked).offset().top - 103
 	    }, 800);
 
 	    $('.navbar-toggle').removeClass('is-opened');
