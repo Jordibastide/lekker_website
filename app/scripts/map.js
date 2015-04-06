@@ -12,8 +12,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
 
 
-var map;
-var brooklyn = new google.maps.LatLng(40.6743890, -73.9455);
+var map, geocoder;
 
 var MY_MAPTYPE_ID = 'custom_style';
 
@@ -104,11 +103,13 @@ function initialize() {
 
 //a6b6bc
 
-
-
+    lat = 48.854243;
+    lon = 2.3703059,14;
+    var latLng = new google.maps.LatLng(lat, lon);
+    geocoder = new google.maps.Geocoder();
   var mapOptions = {
-    zoom: 12,
-    center: brooklyn,
+    zoom: 15,
+    center: latLng,
     mapTypeControlOptions: {
       mapTypeIds: [google.maps.MapTypeId.ROADMAP, MY_MAPTYPE_ID]
     },
@@ -117,10 +118,12 @@ function initialize() {
 
   map = new google.maps.Map(document.getElementById('map-canvas'),
       mapOptions);
-
+  codeAddress('8+Rue+de+la+Bastille,+75004+Paris');
   var styledMapOptions = {
     name: 'Custom Style'
   };
+
+
 
   var customMapType = new google.maps.StyledMapType(featureOpts, styledMapOptions);
 
@@ -129,3 +132,15 @@ function initialize() {
 
 google.maps.event.addDomListener(window, 'load', initialize);
 
+/////////////////////////////////////////////////////////////////////////
+ function codeAddress(address) {
+    geocoder.geocode( { 'address': address}, function(results, status) {
+      if (status == google.maps.GeocoderStatus.OK) {
+        map.setCenter(results[0].geometry.location);
+        var marker = new google.maps.Marker({
+            map: map,
+            position: results[0].geometry.location
+        });
+      }
+    });
+  }
