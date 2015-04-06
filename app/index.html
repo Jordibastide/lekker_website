@@ -18,7 +18,7 @@
   <!-- endbuild -->
 </head>
 <body>
- <!--  <div id="loader" class="logo-big container text-center">
+  <div id="loader" class="logo-big container text-center">
     <svg viewBox="25 30 300 300" preserveAspectRatio="xMidYMid meet">
       <path d="M129.3,216.5v31.1h9.5v1.7h-9.5v11.4h12v1.8h-13.7v-47.6h13.7v1.7H129.3z M150.6,245.2l12,17.1h-2.1
       l-10.7-15.3l-2,4.4v10.9H146v-47.6h1.7v33l13-33h1.8L150.6,245.2z M159,226.4h1.7l12.6,33.2v-33.2h1.7v47.8h-1.7v-10.9l-1.9-4.4
@@ -32,7 +32,7 @@
       c0.1-0.7,7.9-67.1,9.5-79.8c-9,1-16.3-2.5-20.3-9.7c-4.4-8.1-3.5-18.7,2.2-25.4c3.3-3.8,10.5-8.9,24.8-3.5L142.6,70.3z M155.4,272.1
       h-34.6v1.8h34.6V272.1z"/>
     </svg>
-  </div> -->
+  </div>
   <section id="site-wrapper">
     <nav class="navbar-custom navbar-fixed-top">
       <div class="container">
@@ -88,7 +88,7 @@
             <div class="col-sm-6">
               <h2>
                 Curry Coco
-                <a class="twitter popup"  href="https://twitter.com/intent/tweet?hashtags=nextbunny,currycoco&text=Je%20vote%20pour%20le Bunny%20Curry%20Coco">
+                <a class="twitter popup" title="Tweet le bunny coco curry #nextbunny" href="https://twitter.com/intent/tweet?hashtags=nextbunny,currycoco&text=Je%20vote%20pour%20le Bunny%20Curry%20Coco">
                   <i class="fa fa-twitter"></i>
                 </a>
               </h2>
@@ -127,7 +127,7 @@
             <div class="col-sm-6">
               <h2>
                 Vegan
-                <a class="twitter popup"  href="https://twitter.com/intent/tweet?hashtags=nextbunny,vegan&text=Je%20vote%20pour%20le Bunny%20Vegan">
+                <a class="twitter popup" title="Tweet le bunny vegan #nextbunny" href="https://twitter.com/intent/tweet?hashtags=nextbunny,vegan&text=Je%20vote%20pour%20le Bunny%20Vegan">
                   <i class="fa fa-twitter"></i>
                 </a>
               </h2>
@@ -161,6 +161,8 @@
   </div>
 </section>
 <section id="twitter-timeline" class="container-fluid blue">
+  
+  <div id="lekker-hashtag"></div>
   <div class="container">
     <div class="row">
       <div class="col-sm-12">
@@ -180,41 +182,28 @@
 </div>
 </section>
 
+<section>
+  <div class="section" id="menu_section">
+    <div class="container" id="menu_container">
+      <div class="row">
 
-<div class="section" id="menu_section">
-  <div class="container" id="menu_container">
-    <div class="row">
+        <h1> VOUS PRENDREZ QUOI ? </h1>
 
-      <h1> VOUS PRENDREZ QUOI ? </h1>
-
-      <div class="col-md-3 menu_item">                        
-        <div class="menu_item_bloc">
-          <img src="images/menu/boxbunny.jpg"
-          class="img-responsive">
-          <h2>BOX BUNNY</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisici elit,
-            <br>sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
-            <br>Ut enim ad minim veniam, quis nostrud</p>
-          </div>       
-        </div>
         <div class="col-md-3 menu_item">                        
           <div class="menu_item_bloc">
-            <img src="images/menu/bunnymac.jpg"
+            <img src="images/menu/boxbunny.jpg"
             class="img-responsive">
-            <h2>BUNNYMAC</h2>
+            <h2>BOX BUNNY</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisici elit,
               <br>sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
               <br>Ut enim ad minim veniam, quis nostrud</p>
-            </div>
+            </div>       
           </div>
           <div class="col-md-3 menu_item">                        
             <div class="menu_item_bloc">
-              <img src="images/menu/lejordi.jpg"
+              <img src="images/menu/bunnymac.jpg"
               class="img-responsive">
-              <h2>LE JORDI
-                <span id="lejordilogo"></span>
-              </h2> 
-
+              <h2>BUNNYMAC</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipisici elit,
                 <br>sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
                 <br>Ut enim ad minim veniam, quis nostrud</p>
@@ -222,18 +211,31 @@
             </div>
             <div class="col-md-3 menu_item">                        
               <div class="menu_item_bloc">
-                <img src="images/menu/lelekker.jpg"
+                <img src="images/menu/lejordi.jpg"
                 class="img-responsive">
-                <h2>LE LEKKER</h2>
+                <h2>LE JORDI
+                  <span id="lejordilogo"></span>
+                </h2> 
+
                 <p>Lorem ipsum dolor sit amet, consectetur adipisici elit,
                   <br>sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
                   <br>Ut enim ad minim veniam, quis nostrud</p>
                 </div>
               </div>
+              <div class="col-md-3 menu_item">                        
+                <div class="menu_item_bloc">
+                  <img src="images/menu/lelekker.jpg"
+                  class="img-responsive">
+                  <h2>LE LEKKER</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisici elit,
+                    <br>sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+                    <br>Ut enim ad minim veniam, quis nostrud</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-
+        </section>
 
 
 

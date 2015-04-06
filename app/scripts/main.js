@@ -5,7 +5,7 @@ $(document).ready(function(){
 	$('.navbar-toggle').click(function(){
 		$(this).toggleClass('is-opened');
 	});
-	$('.popup').click(function(event) {
+	$('.popup').click(function() {
 		var width  = 575,
 		    height = 400,
 		    left   = ($(window).width()  - width)  / 2,
@@ -18,5 +18,6 @@ $(document).ready(function(){
 		             ',left='   + left;
 
 		window.open(url, 'twitter', opts);
-		});
+		return false;
+	});
 });

@@ -1,6 +1,36 @@
 #twitter-timeline {
+	overflow: hidden;
+	position: relative;
+	z-index: -10;
+
+	box-shadow: inset 0px 10px 10px -5px darken(@primary, 10%), inset 0px -10px 10px -5px darken(@primary, 10%);
+
+	#lekker-hashtag {
+		background: url('../images/lekker-hat-white-hashtag.svg') no-repeat center center;
+		background-size: cover;
+		position: fixed;
+		opacity: 0.1;
+		top: 350px;
+		right: 0px;
+		width: 250px;
+		height: 300px;
+
+		@media (min-width: @screen-lg-min){
+			right: 200px;
+			width: 350px;
+			height: 400px;
+		}
+	}
+
 	#twitter-widget-0 {
-		width: 100% !important;
+		width: 70% !important;
+		margin: 0 15% !important;
+		text-align: center;
+
+		@media (max-width: @screen-md-max){
+			width: 90% !important;
+			margin: 0 5% !important;
+		}
 	}
 
 	.no-tweets-pane {
