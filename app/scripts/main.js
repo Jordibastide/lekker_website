@@ -18,5 +18,8 @@ $(document).ready(function(){
 		             ',left='   + left;
 
 		window.open(url, 'twitter', opts);
+		return false;
 		});
+
+
 });
