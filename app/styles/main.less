@@ -2,22 +2,52 @@
 @icon-font-path: "../fonts/glyphicons/";
 
 @import "../bower_components/font-awesome/less/font-awesome.less";
-@fa-font-path: "../fonts/font-awesome";
+@fa-font-path: "../fonts/font-awesome/";
 
 @fa-font-path: "../fonts/canter";
 
 @import "navbar.less";
 @import "loader.less";
 @import "cover.less";
+@import "next-bunny.less";
+@import "twitter-timeline.less";
 
 .jumbotron {
   margin: 50px auto 0 auto;
 }
 
 section {
-	padding-top: 5%;
+	padding: 2% 0;
 
-	h1 {
-		font-family: canter-bold;
+	&.blue {
+		background-color: @primary;
+		h1 {
+			color: white;
+		}
+
+		&::before {
+			background: url('../images/lekker-hat-white.svg');
+		}
+	}
+}
+
+h1 {
+	font-family: canter-light;
+	font-size: 5em;
+	margin-bottom: 20px;
+
+	&::before {
+		content: '';
+		display: inline-block;
+		width: 60px;
+		height: 60px;
+		background: url('../images/lekker-hat.svg');
+		background-repeat: no-repeat;
+	}
+
+	.subtitle {
+		display: block;
+		font-family: sans-serif;
+		font-size: 0.2em;
 	}
 }
