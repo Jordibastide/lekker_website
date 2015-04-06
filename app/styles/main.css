@@ -7642,6 +7642,7 @@ td.visible-print {
 }
 #menu {
   color: #485e69;
+  box-shadow: inset 0px 10px 10px -5px #33434b, inset 0px -10px 10px -5px #33434b;
 }
 #menu h2 {
   font-family: canter-bold;
@@ -7749,22 +7750,38 @@ td.visible-print {
 #menu .lelekker {
   background: url('../images/menu/lejordilogo.png');
 }
-#map html,
-#map body,
-#map #map-canvas {
-  height: 100%;
-  margin: 0px;
-  padding: 0px;
+#adresseethoraires {
+  background: url('../images/contact.jpg') center no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  padding-bottom: 0;
+  padding-top: 50px;
+  box-shadow: inset 0px 10px 10px -5px #33434b, inset 0px -10px 10px -5px #33434b;
 }
-#map #panel {
-  position: absolute;
-  top: 5px;
-  left: 50%;
-  margin-left: 0px;
-  z-index: 5;
-  background-color: #fff;
-  padding: 5px;
-  border: 1px solid #999;
+#adresseethoraires .title {
+  background-color: #485e69;
+  margin-top: -2%;
+}
+#adresseethoraires .content {
+  vertical-align: middle;
+  text-align: center;
+  font-family: canter-bold;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+#adresseethoraires .content p {
+  font-family: canter-bold;
+  font-size: 3em;
+}
+#adresseethoraires .content p.upper {
+  text-transform: uppercase;
+}
+#adresseethoraires .content .metro {
+  background: url('../images/metro.svg') no-repeat center bottom;
+  content: '';
+  display: inline-block;
+  height: 30px;
+  width: 150px;
 }
 #bunny-description {
   background: url('../images/background-letterpressed.jpg') center top;
