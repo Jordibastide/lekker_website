@@ -3,6 +3,8 @@
 #menu {
 	color: @primary;
 
+	box-shadow: inset 0px 10px 10px -5px darken(@primary, 10%), inset 0px -10px 10px -5px darken(@primary, 10%);
+
 	h2 {
 		font-family: canter-bold;
 		font-size: 3em;
@@ -98,7 +100,7 @@
 	.lejordi{background: url('../images/menu/lejordilogo.png');}
 	.lelekker{background: url('../images/menu/lejordilogo.png');}
 }
-
+ 
 
 #map{
 
@@ -120,6 +122,52 @@
 		border: 1px solid #999;
 	}
 
+}
 
+#adresseethoraires{
+ 
+	background: url('../images/contact.jpg') center no-repeat;
+	background-attachment: fixed;
+	background-size: 100% 100%;
+	padding-bottom: 0;
+	padding-top:50px;
 
+	box-shadow: inset 0px 10px 10px -5px darken(@primary, 10%), inset 0px -10px 10px -5px darken(@primary, 10%);
+	.title {
+		background-color: @primary;
+		margin-top: -2%;
+		
+	}
+
+	.content {
+	  	vertical-align: middle;
+	  	text-align: center;
+	  	font-family: canter-bold;
+	  	padding-top: 50px;
+	  	padding-bottom: 50px;
+
+  	p {
+  		font-family: canter-bold;
+  		font-size: 3em;
+
+  		&.upper {
+  			text-transform: uppercase;
+  		}
+  	}
+
+  	.metro {
+  		background: url('../images/metro.svg') no-repeat center bottom;
+  		content: '';
+  		display: inline-block;
+  		height: 30px;
+  		width: 150px;
+  	}
+
+  }
+  
+  	#img_contact{
+  		
+
+ 
+  	}
 }
