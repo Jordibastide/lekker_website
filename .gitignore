@@ -25,3 +25,15 @@ node_modules
 dist
 .tmp
 app/bower_components
+/app/fonts/font-awesome/FontAwesome.otf
+/app/fonts/font-awesome/fontawesome-webfont.eot
+/app/fonts/font-awesome/fontawesome-webfont.svg
+/app/fonts/font-awesome/fontawesome-webfont.ttf
+/app/fonts/font-awesome/fontawesome-webfont.woff
+/app/fonts/glyphicons/glyphicons-halflings-regular.eot
+/app/fonts/glyphicons/glyphicons-halflings-regular.svg
+/app/fonts/glyphicons/glyphicons-halflings-regular.ttf
+/app/fonts/glyphicons/glyphicons-halflings-regular.woff
+/app/scripts/hello.js
+/app/styles/main.css
+/app/styles/main.css.map
