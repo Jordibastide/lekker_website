@@ -16,8 +16,8 @@
   	position: absolute;
   	bottom: 0;
   	left: 0;
-  	right: 0;
-  	margin: auto;
+    right: 0;
+    margin: auto;
 
   	i {
   		color: white;
@@ -35,14 +35,17 @@
 
   .cover-content {
   	display: table-cell;
-  	padding: 300px 20px 0;
-  	vertical-align: middle;
+  	padding-bottom: 50px;
+  	vertical-align: bottom;
   	text-align: center;
   	font-family: canter-bold;
 
   	p {
-  		font-family: canter-bold;
-  		font-size: 3em;
+  		font-size: 3.5rem;
+
+      @media (min-width: @screen-sm-min){
+        font-size: 3em;
+      }
 
   		&.upper {
   			text-transform: uppercase;
@@ -53,8 +56,8 @@
   		background: url('../images/metro.svg') no-repeat center bottom;
   		content: '';
   		display: inline-block;
-  		height: 30px;
-  		width: 150px;
+  		height: 25px;
+  		width: 100px;
   	}
   }
 }
