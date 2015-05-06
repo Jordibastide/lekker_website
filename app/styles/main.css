@@ -7932,6 +7932,9 @@ td.visible-print {
 }
 #site-wrapper {
   background: url("../images/lekker-cover.jpg") center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
   background-attachment: fixed;
   display: table;
@@ -8227,9 +8230,11 @@ td.visible-print {
   border: 1px solid #999;
 }
 #adresseethoraires {
-  background: url('../images/contact.jpg') center no-repeat;
-  background-attachment: fixed;
-  background-size: 100% 100%;
+  background: url('../images/contact.jpg') no-repeat center bottom fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   padding-bottom: 0;
   padding-top: 50px;
   box-shadow: inset 0px 10px 10px -5px #19272e, inset 0px -10px 10px -5px #19272e;
@@ -8260,8 +8265,11 @@ td.visible-print {
   width: 150px;
 }
 #bunny-description {
-  background: url('../images/background-letterpressed.jpg') center top;
+  background: url('../images/background-letterpressed.jpg') no-repeat center center fixed;
   background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
   padding-bottom: 0;
 }
@@ -8303,7 +8311,20 @@ td.visible-print {
 #bunny-description p {
   vertical-align: center;
   font-size: 1.1em;
-  text-align: justify;
+  -webkit-column-count: 2;
+  /* Chrome, Safari, Opera */
+  -moz-column-count: 2;
+  /* Firefox */
+  column-count: 2;
+}
+@media (max-width: 767px) {
+  #bunny-description p {
+    -webkit-column-count: 1;
+    /* Chrome, Safari, Opera */
+    -moz-column-count: 1;
+    /* Firefox */
+    column-count: 1;
+  }
 }
 footer {
   color: #2b434f;
@@ -8357,7 +8378,7 @@ section.blue h1 .subtitle {
 }
 h1 {
   font-family: canter-light;
-  font-size: 5em;
+  font-size: 5rem;
   margin-bottom: 20px;
 }
 h1::before {
@@ -8371,6 +8392,6 @@ h1::before {
 h1 .subtitle {
   display: block;
   font-family: sans-serif;
-  font-size: 0.2em;
+  font-size: 0.3em;
 }
 /*# sourceMappingURL=/styles/main.css.map */
